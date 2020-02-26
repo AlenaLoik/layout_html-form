@@ -41,11 +41,13 @@
     </fieldset>
     <fieldset class="form-section">
       <legend>An interesting fact about you!</legend>
-      <label class="form-question"> Do you love cats?
-        <input id="love-cats" name="q-cats" type="radio">
-        <label for="love-cats">Yes</label>
-        <input id="hate-cats" name="q-cats" type="radio">
-        <label for="hate-cats">No</label>
+      <label class="form-question" for="y-cats"> Do you love cats?
+        <label>
+          <input name="y-cats" id="y-cats" type="radio">
+          Yes</label>
+        <label>
+          <input name="n-cats" type="radio">
+          No</label>
       </label>
       <label class="form-question"> What is your favorite color?
         <input name="q-color" type="color">
@@ -60,7 +62,7 @@
           <option value="Lada">Lada</option>
         </select>
       </label>
-      <label class="form-question form-info"> How do you rate our work?
+      <label class="form-info"> How do you rate our work?
         <input name="rate-work" type="range" min="0" max="11" value="0">
       </label>
     </fieldset>
@@ -69,7 +71,7 @@
       <label class="form-question">Comments:
         <textarea name="comments"></textarea>
       </label>
-      <label class="form-question form-info"> Would you recommend us?
+      <label class="form-info"> Would you recommend us?
         <select>
           <option value="yes">Yes</option>
           <option value="no">No</option>
